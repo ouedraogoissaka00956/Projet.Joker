@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mot de passe oublie</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="Acceuil.css">
+    <link rel="stylesheet" href="Motpasseoublie.css">
+    <link rel="stylesheet" href="Modesombre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="Modesombre.js"></script>
+    <script src=""></script>
+</head>
+<body>
+    <header class="haut">
+        <div class="logo">
+            <img src="/Images/bitcoin_logo.png" alt="Bitcoin Logo">
+            <span>BTC</span>
+        </div>
+        <div class="flag">
+            <img src="/Images/burkina_faso_flag.png" alt="Burkina Faso Flag">
+        </div>
+        <button id="toggleDarkMode"><i class="fas fa-moon"></i></button>
+    </header>
+    <div class="acceuil">
+        <a href="Acceuil.html" class="lien"><h1>Acceuil</h1></a>
+        <ul class="nav-links">
+            <li><a href="#" class="v">Contactez-Nous</a></li>
+        </ul>
+    </div>
+    <br> <br>
+    <div class="password-reset-container">
+        <div class="title">
+            <h1>Mot de passe oublié</h1>
+        </div>
+       <div class="formul">
+        <img src="/Images/bitcoin_logo.png" alt="Bitcoin Logo" class="password-logo">
+        <p>Entrer votre adresse électronique. Vous recevrez un courriel avec un lien pour réinitialiser votre mot de
+            passe.</p>
+        <p>Le lien dans cet email est valable 30 minutes.</p>
+        <form id="PasswordForm">
+            <label for="email"><h3>Adresse électronique</h3></label>
+            <input type="email" id="email" placeholder="Veuillez entrer votre adresse email" > <br> <br>
+            <a href="ReinitialisationMDP.html"><input type="button" value="Valide"></a>
+        </form>
+        <p id="message"></p>
+       </div>
+    </div>
+    
+</body>
+</html>

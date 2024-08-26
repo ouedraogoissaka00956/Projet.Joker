@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creation de compte</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="Acceuil.css">
+    <link rel="stylesheet" href="Creationcompte.css">
+    <link rel="stylesheet" href="Modesombre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="Modesombre.js"></script>
+    <script src="Verificationmotpasse.js"></script>
+    <script>
+        function validatePasswords() {
+            const password = document.getElementById("password").value;
+            const password1 = document.getElementById("password1").value;
+
+            if (password !== password1) {
+                alert("Les mots de passe ne correspondent pas. Veuillez réessayer.");
+                return false; // Empêche l'envoi du formulaire
+            }
+            return true; // Autorise l'envoi du formulaire
+        }
+    </script>
+</head>
+<body>
+     <header class="haut"> 
+        <div class="logo">
+            <img src="/Images/bitcoin_logo.png" alt="Bitcoin Logo">
+            <span>BTC</span>
+        </div>
+        <div class="flag">
+            <img src="/Images/burkina_faso_flag.png" alt="Burkina Faso Flag">
+        </div>
+        <button id="toggleDarkMode"><i class="fas fa-moon"></i></button>
+    </header>
+    <div class="acceuil">
+        <a href="Acceuil.html" class="lien"><h1>Acceuil</h1></a>
+        <ul class="nav-links">
+            <li><a href="connexion.php" class="v">Se Connecter</a></li>
+            <li><a href="#" class="v">Contactez-Nous</a></li>
+        </ul>
+    </div>
+    <br> <br>
+    <div class="form1">
+        <form method="POST" id="formulaire" action="Insertion.php" onsubmit="return validatePasswords()">
+            <div class="title"><h1>Création du compte</h1></div>
+            <div class="form-group">
+            <label for="username">Nom de l'utilisateur </label> <br>
+            <input type="text" name="username" id="username" placeholder="Veuillez entrer votre nom d'utilisateur" required><br><br>
+            
+            <label for="prenom">Prénom </label> <br>
+            <input type="text" name="prenom" id="prenom" placeholder="Veuillez entrer votre prenom" required><br><br>
+            
+            <label for="nationalite">Nationalité </label> <br>
+            <select id="nationalite" name="nationalite" required>
+                <option value="">--Sélectionnez un pays--</option>
+                <option value="Afghan">Afghanistan</option>
+                <option value="Albanais">Albanie</option>
+                <option value="Algerien">Algérie</option>
+                <option value="Samoan">Samoa américaines</option>
+                <option value="Andorran">Andorre</option>
+                <option value="Angolais">Angola</option>
+                <option value="Anguillais">Anguilla</option>
+                <option value="Antarctique">Antarctique</option>
+                <option value="Antiguais">Antigua-et-Barbuda</option>
+                <option value="Argentin">Argentine</option>
+                <option value="Armenien">Arménie</option>
+                <option value="Arubais">Aruba</option>
+                <option value="Australien">Australie</option>
+                <option value="Autrichien">Autriche</option>
+                <option value="Azerbaïdjanais">Azerbaïdjan</option>
+                <option value="Bahameen">Bahamas</option>
+                <option value="Bahreïnien">Bahreïn</option>
+                <option value="Bangladais">Bangladesh</option>
+                <option value="Barbadien">Barbade</option>
+                <option value="Biélorusse">Biélorussie</option>
+                <option value="Belge">Belgique</option>
+                <option value="Belizien">Belize</option>
+                <option value="Beninois">Bénin</option>
+                <option value="Bermudien">Bermudes</option>
+                <option value="Bhoutanais">Bhoutan</option>
+                <option value="Bolivien">Bolivie</option>
+                <option value="Bonairien">Bonaire, Saint-Eustache et Saba</option>
+                <option value="Bosnien">Bosnie-Herzégovine</option>
+                <option value="Botswanais">Botswana</option>
+                <option value="Bresilien">Brésil</option>
+                <option value="Brunéien">Brunei</option>
+                <option value="Bulgare">Bulgarie</option>
+                <option value="Burkinabe">Burkina Faso</option>
+                <option value="Burundais">Burundi</option>
+                <option value="Capverdien">Cap-Vert</option>
+                <option value="Cambodgien">Cambodge</option>
+                <option value="Camerounais">Cameroun</option>
+                <option value="Canadien">Canada</option>
+                <option value="Caïmanien">Îles Caïmans</option>
+                <option value="Centrafricain">République Centrafricaine</option>
+                <option value="Tchadien">Tchad</option>
+                <option value="Chilien">Chili</option>
+                <option value="Chinois">Chine</option>
+                <option value="Christmasien">Île Christmas</option>
+                <option value="Cocossien">Îles Cocos</option>
+                <option value="Colombien">Colombie</option>
+                <option value="Comorien">Comores</option>
+                <option value="Congolais">République Démocratique du Congo</option>
+                <option value="Congolais">République du Congo</option>
+                <option value="Cookien">Îles Cook</option>
+                <option value="Costaricain">Costa Rica</option>
+                <option value="Croate">Croatie</option>
+                <option value="Cuban">Cuba</option>
+                <option value="Curaçaon">Curaçao</option>
+                <option value="Chypriote">Chypre</option>
+                <option value="Tcheque">République tchèque</option>
+                <option value="Danois">Danemark</option>
+                <option value="Djiboutien">Djibouti</option>
+                <option value="Dominicain">Dominique</option>
+                <option value="Dominicain">République dominicaine</option>
+                <option value="Equatorien">Équateur</option>
+                <option value="Egyptien">Égypte</option>
+                <option value="Salvadorien">El Salvador</option>
+                <option value="Guineen">Guinée équatoriale</option>
+                <option value="Erythréen">Érythrée</option>
+                <option value="Estonien">Estonie</option>
+                <option value="Eswatinien">Eswatini</option>
+                <option value="Ethiopien">Éthiopie</option>
+                <option value="Fidjien">Fidji</option>
+                <option value="Finlandais">Finlande</option>
+                <option value="Français">France</option>
+                <option value="Gabonais">Gabon</option>
+                <option value="Gambien">Gambie</option>
+                <option value="Georgien">Géorgie</option>
+                <option value="Allemand">Allemagne</option>
+                <option value="Ghanéen">Ghana</option>
+                <option value="Gibraltariens">Gibraltar</option>
+                <option value="Grec">Grèce</option>
+                <option value="Groenlandais">Groenland</option>
+                <option value="Grenadien">Grenade</option>
+                <option value="Guadeloupeen">Guadeloupe</option>
+                <option value="Guamien">Guam</option>
+                <option value="Guatemalteque">Guatemala</option>
+                <option value="Guineen">Guinée</option>
+                <option value="Guinéen">Guinée-Bissau</option>
+                <option value="Guyanais">Guyana</option>
+                <option value="Haïtien">Haïti</option>
+                <option value="Hondurien">Honduras</option>
+                <option value="Hongkongais">Hong Kong</option>
+                <option value="Hongrois">Hongrie</option>
+                <option value="Islandais">Islande</option>
+                <option value="Indien">Inde</option>
+                <option value="Indonesien">Indonésie</option>
+                <option value="Iranien">Iran</option>
+                <option value="Irakien">Irak</option>
+                <option value="Irlandais">Irlande</option>
+                <option value="Israelien">Israël</option>
+                <option value="Italien">Italie</option>
+                <option value="Jamaïcain">Jamaïque</option>
+                <option value="Japonais">Japon</option>
+                <option value="Jersiais">Jersey</option>
+                <option value="Jordanais">Jordanie</option>
+                <option value="Kazakh">Kazakhstan</option>
+                <option value="Kenyan">Kenya</option>
+                <option value="Kiribatien">Kiribati</option>
+                <option value="Coreen du Nord">Corée du Nord</option>
+                <option value="Coreen du Sud">Corée du Sud</option>
+                <option value="Koweïtien">Koweït</option>
+                <option value="Kirghiz">Kirghizistan</option>
+                <option value="Laotien">Laos</option>
+                <option value="Letton">Lettonie</option>
+                <option value="Libanais">Liban</option>
+                <option value="Lesothan">Lesotho</option>
+                <option value="Liberien">Libéria</option>
+                <option value="Libyen">Libye</option>
+                <option value="Liechtensteinois">Liechtenstein</option>
+                <option value="Lituanien">Lituanie</option>
+                <option value="Luxembourgeois">Luxembourg</option>
+                <option value="Macaonais">Macao</option>
+                <option value="Malgache">Madagascar</option>
+                <option value="Malawien">Malawi</option>
+                <option value="Malaisien">Malaisie</option>
+                <option value="Maldivien">Maldives</option>
+                <option value="Malien">Mali</option>
+                <option value="Maltais">Malte</option>
+                <option value="Marshallais">Îles Marshall</option>
+                <option value="Martiniquais">Martinique</option>
+                <option value="Mauritanien">Mauritanie</option>
+                <option value="Mauricien">Maurice</option>
+                <option value="Mayottais">Mayotte</option>
+                <option value="Mexicain">Mexique</option>
+                <option value="Micronesien">Micronésie</option>
+                <option value="Moldave">Moldavie</option>
+                <option value="Monegasque">Monaco</option>
+                <option value="Mongol">Mongolie</option>
+                <option value="Monténégrin">Monténégro</option>
+                <option value="Marocain">Maroc</option>
+                <option value="Mozambicain">Mozambique</option>
+                <option value="Birman">Birmanie</option>
+                <option value="Namibien">Namibie</option>
+                <option value="Nauruan">Nauru</option>
+                <option value="Nepalais">Népal</option>
+                <option value="Neerlandais">Pays-Bas</option>
+                <option value="Neo-zelandais">Nouvelle-Zélande</option>
+                <option value="Nicaraguayen">Nicaragua</option>
+                <option value="Nigerien">Niger</option>
+                <option value="Nigerian">Nigéria</option>
+                <option value="Niuean">Niue</option>
+                <option value="Norfolkien">Îles Norfolk</option>
+                <option value="Mariannais">Îles Mariannes du Nord</option>
+                <option value="Norvegien">Norvège</option>
+                <option value="Omanien">Oman</option>
+                <option value="Pakistanais">Pakistan</option>
+                <option value="Palaosien">Palaos</option>
+                <option value="Palestinien">Palestine</option>
+                <option value="Panameen">Panama</option>
+                <option value="Papouasien">Papouasie-Nouvelle-Guinée</option>
+                <option value="Paraguayen">Paraguay</option>
+                <option value="Peruvien">Pérou</option>
+                <option value="Philippin">Philippines</option>
+                <option value="Polonais">Pologne</option>
+                <option value="Portugais">Portugal</option>
+                <option value="Portoricain">Porto Rico</option>
+                <option value="Qatarien">Qatar</option>
+                <option value="Reunionnais">Réunion</option>
+                <option value="Roumain">Roumanie</option>
+                <option value="Russe">Russie</option>
+                <option value="Rwandais">Rwanda</option>
+                <option value="Saint-Barthelemois">Saint-Barthélemy</option>
+                <option value="Saint-Helenien">Sainte-Hélène</option>
+                <option value="Saint-Kittien">Saint-Kitts-et-Nevis</option>
+                <option value="Saint-Lucien">Sainte-Lucie</option>
+                <option value="Saint-Martinois">Saint-Martin</option>
+                <option value="Saint-Pierrais">Saint-Pierre-et-Miquelon</option>
+                <option value="Saint-Vincentais">Saint-Vincent-et-les-Grenadines</option>
+                <option value="Samoan">Samoa</option>
+                <option value="Saint-Marinais">Saint-Marin</option>
+                <option value="Sao Tomeen">Sao Tomé-et-Principe</option>
+                <option value="Senegalais">Sénégal</option>
+                <option value="Serbe">Serbie</option>
+                <option value="Seychellois">Seychelles</option>
+                <option value="Sierra-Leonais">Sierra Leone</option>
+                <option value="Singapourien">Singapour</option>
+                <option value="Sint-Maartenois">Sint Maarten</option>
+                <option value="Slovaque">Slovaquie</option>
+                <option value="Slovene">Slovénie</option>
+                <option value="Salomonais">Îles Salomon</option>
+                <option value="Somalien">Somalie</option>
+                <option value="Sud-Africain">Afrique du Sud</option>
+                <option value="Georgien">Géorgie du Sud</option>
+                <option value="Soudanais">Soudan du Sud</option>
+                <option value="Espagnol">Espagne</option>
+                <option value="Sri-lankais">Sri Lanka</option>
+                <option value="Soudanais">Soudan</option>
+                <option value="Surinamais">Suriname</option>
+                <option value="Eswatinien">Eswatini</option>
+                <option value="Suédois">Suède</option>
+                <option value="Suisse">Suisse</option>
+                <option value="Syrien">Syrie</option>
+                <option value="Taïwanais">Taïwan</option>
+                <option value="Tadjik">Tadjikistan</option>
+                <option value="Tanzanien">Tanzanie</option>
+                <option value="Thaïlandais">Thaïlande</option>
+                <option value="Timorais">Timor oriental</option>
+                <option value="Togolais">Togo</option>
+                <option value="Tokelauien">Tokelau</option>
+                <option value="Tongien">Tonga</option>
+                <option value="Trinidadien">Trinité-et-Tobago</option>
+                <option value="Tunisien">Tunisie</option>
+                <option value="Turc">Turquie</option>
+                <option value="Turkmene">Turkménistan</option>
+                <option value="Turks-et-Caïquais">Îles Turks-et-Caïques</option>
+                <option value="Tuvaluan">Tuvalu</option>
+                <option value="Ougandais">Ouganda</option>
+                <option value="Ukrainien">Ukraine</option>
+                <option value="Emirien">Émirats Arabes Unis</option>
+                <option value="Britannique">Royaume-Uni</option>
+                <option value="Americain">États-Unis</option>
+                <option value="Uruguayen">Uruguay</option>
+                <option value="Ouzbek">Ouzbékistan</option>
+                <option value="Vanuatuan">Vanuatu</option>
+                <option value="Venezuélien">Venezuela</option>
+                <option value="Vietnamien">Viêt Nam</option>
+                <option value="Wallisien">Wallis-et-Futuna</option>
+                <option value="Saharien">Sahara occidental</option>
+                <option value="Yemenite">Yémen</option>
+                <option value="Zambien">Zambie</option>
+                <option value="Zimbabween">Zimbabwe</option>
+            </select><br><br>            
+            
+            <label for="email">Adresse email </label> <br>
+            <input type="email" name="email" id="email" placeholder="Veuillez entrer votre adresse email" required><br><br>
+            
+            <label for="password">Mot de passe (8 caractères) </label> <br>
+            <input type="password" name="password" id="password" placeholder="Veuillez entrer votre mot de passe" required><br><br>
+            <label for="password">Confirmation du mot de passe</label> <br>
+            <input type="password" name="password1" id="password1" placeholder="Veuillez confirmer votre mot de passe" required><br><br>
+            
+            <input type="checkbox" name="newsletter" id="newsletter" class="choix">
+            <label for="newsletter">Recevoir un message par mail</label><br><br>
+            <button type="submit">Créer mon compte</button>
+            </div>
+        </form>
+
+        </div>
+
+        <script>
+           function Controle(){
+                const email = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                
+                if(!email.test(document.getElementById('email').value)){
+                    alert("L'adresse e-mail n'est pas valide !! Il doit comporter un '@' et un '.'");
+                }
+                else{
+                    return true;
+                }
+            }
+
+             /*   function controle(email) {
+                   let  verification= /^[\w.-]+@[\w.-]+\.[a-zA-Z]{2,3}$/;
+                   return verification.test(email);
+                }
+
+                function validate() {
+                   let email = document.getElementById("email").value;
+                   if (controle(email)) {
+                     alert(email + " est valide !");
+                    } else {
+                       alert(email + " n'est pas valide !");
+                    }
+                    return true
+                }
+                    */
+        </script>
+
+    
+</body>
+</html>

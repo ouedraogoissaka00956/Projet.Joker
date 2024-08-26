@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de paiement Bitcoin</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="Acceuil.css">
+    <link rel="stylesheet" href="Paiement.css">
+    <link rel="stylesheet" href="Modesombre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="Modesombre.js"></script>
+</head>
+<body>
+    <header class="haut">
+        <div class="logo">
+            <img src="/Images/bitcoin_logo.png" alt="Bitcoin Logo">
+            <span>BTC</span>
+        </div>
+        <div class="flag">
+            <img src="/Images/burkina_faso_flag.png" alt="Burkina Faso Flag">
+        </div>
+        <button id="toggleDarkMode"><i class="fas fa-moon"></i></button>
+    </header>
+    <div class="acceuil">
+        <a href="Acceuil.html" class="lien"><h1>Acceuil</h1></a>
+        <ul class="nav-links">
+            <li><a href="#" class="v">Contactez-Nous</a></li>
+        </ul>
+    </div>
+    <br><br> 
+        <div class="title"><h1>Page de paiement Bitcoin</h1></div>
+       <div class="payer">
+          <label for="nombre">Entrez le montant en Bitcoin</label> <br>
+          <input type="number" id="bitcoinAmount" placeholder="veuillez entrer le montant à envoyer"> <br>
+          <label for="adress">Entrer l'adresse du destinateur</label> <br>
+          <input type="text" id="adresse" placeholder="veuillez entrer l'adresse du destinateur"> <br> <br>
+          <input type="button" value="Payer en Bitcoin" onclick="generatePaymentAddress()">
+    </div>
+      </div>
+    <script>
+        function generatePaymentAddress() {
+            // Récupérer le montant entré par l'utilisateur
+            let bitcoinAmount = parseFloat(document.getElementById('bitcoinAmount').value);
+
+            //Recuperer l'adresse du destinateur
+            let adresse = String(document.getElementById('adresse').value);
+
+            // Afficher l'adresse Bitcoin et le montant à payer
+            alert(`Envoyez ${bitcoinAmount} BTC à l'adresse : ${adresse}`);
+        }
+    </script>
+</body>
+</html>
