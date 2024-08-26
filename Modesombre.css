@@ -1,0 +1,60 @@
+/* Styles pour le mode sombre */
+
+body.dark-mode {
+    background-image: url("/Images/pexels-photo-8369677\ -\ Copie1.jpg"); /* Image du background */
+}
+.dark-mode .haut {
+    background-color: #1e1e1e; /* Couleur d'arrière-plan sombre pour l'en-tête */
+}
+body.dark-mode .acceuil{
+    background-color: #585050; /* Couleur d'arrière-plan sombre pour la partie acceuil */
+    color: white; /* Couleur du texte */
+}
+.dark-mode .acceuil a{
+    border: #555; /* Couleur des bordures pour la partie acceuil (liens) */
+    background-color: #928a8a; /* Couleur d'arrière-plan sombre pour la partie acceuil (liens) */
+    color: white; /* Couleur du texte */
+}
+
+.dark-mode .form-group {
+    border: 2px solid #928a8a; /* Couleur des bordures pour le formulaire */
+    background-color: #2c2c2c; /* Couleur de fond sombre pour le formulaire */
+}
+.dark-mode .formulaire {
+    border: 2px solid #928a8a; /* Couleur des bordures pour le formulaire */
+    background-color: #2c2c2c; /* Couleur de fond sombre pour le formulaire */
+}
+.dark-mode .formul {
+    border: 2px solid #928a8a; /* Couleur des bordures pour le formulaire */
+    background-color: #2c2c2c; /* Couleur de fond sombre pour le formulaire */
+}
+.dark-mode .title{
+    border: 2px solid #928a8a; /* Couleur des bordures pour le titre */
+    background-color: #2c2c2c; /* Couleur de fond sombre pour le formulaire */
+}
+
+body.dark-mode input {
+    border: 1px solid #555; /* Couleur des bordures pour le mode sombre */
+    background-color: #585050; /* Couleur de fond sombre pour les champs de texte */
+    color: white; /* Couleur du texte clair pour les champs de texte */
+}
+body.dark-mode button{
+    border : 1px solid #555; /* Couleur des bordures pour le mode sombre */
+    background-color: #585050;  /* Couleur de fond sombre pour les bouttons*/
+    color: white; /* Couleur du texte */
+}
+.dark-mode .forget{
+    border : 1px solid #555; /* Couleur des bordures pour le mode sombre */
+    background-color: #585050; /* Couleur de fond sombre pour les liens */
+    color: white; /* Couleur du texte */
+}
+
+.dark-mode select{
+    border : 1px solid #555; /* Couleur des bordures pour le mode sombre */
+    background-color: #585050;  /* Couleur de fond sombre pour les selects */
+    color: white; /* Couleur du texte */
+}
+.dark-mode .payer {
+    border: 2px solid #928a8a; /* Couleur des bordures pour le formulaire */
+    background-color: #2c2c2c; /* Couleur de fond sombre pour le formulaire */
+}
