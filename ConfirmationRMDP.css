@@ -1,0 +1,33 @@
+body{
+    /*Positionnement des textes et image d'arriere plan*/
+    text-align: center;
+    background-image: url("/Images/pexels-photo-8369677.webp");
+}
+.title{
+    /*Positionnement et mise en couleur des class title*/
+    border: 2px solid #0085FB;
+    margin-left: 490px;
+    margin-right: 450px;
+    border-radius: 20px;
+    background-color:rgba(205, 230, 250, 0.8);
+}
+.formulaire{
+    padding:5px;
+    border-radius: 20px;
+    background-color: rgba(205, 230, 250, 0.8);
+    margin-left: 490px;
+    margin-right: 450px;
+    border: 2px solid #0085FB;
+    }
+input[type="button"] {
+     background-color:  #0085FB;
+     color: #000000;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 10px;
+     cursor: pointer;
+     }
+input[type="button"]:hover 
+     {
+      background-color: #83cf3d;
+     }

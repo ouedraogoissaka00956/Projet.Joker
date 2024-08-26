@@ -1,0 +1,28 @@
+@keyframes changeBackground {
+    /*Changement d'image d'arriere plan de la page d'acceuil*/
+    0% {
+        background-image: url('/Images/milky-way-starry-sky-night-sky-star-956999.jpeg.jpg');
+    }
+    25% {
+        background-image: url('/Images/blockpexels-photo-8949399.jpeg.jpg');
+    }
+    50% {
+        background-image: url('/Images/istockphoto-1323013608-612x612.jpg');
+    }
+    100% {
+        background-image: url('/Images/Bitcoin_01-1.png');
+    }
+}
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.animation {
+/*width: 100%;
+height: 100vh;*/
+animation: changeBackground 20s infinite;
+/*background-size: cover;
+background-position: center;*/
+}

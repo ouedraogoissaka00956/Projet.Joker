@@ -1,0 +1,59 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+header .logo span {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header .flag img {
+    height: 20px;
+}
+
+header #toggleDarkMode {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+header #toggleDarkMode:hover {
+    background-color: #555;
+}
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+button {
+    cursor: pointer;
+}
